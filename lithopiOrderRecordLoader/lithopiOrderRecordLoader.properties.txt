@@ -1,0 +1,3 @@
+sourceDB=DBIP,DBPort,DBSID,DBAccount,DBPassword
+destinationDB=DBIP,DBPort,DBSID,DBAccount,DBPassword
+sourceSQL=SELECT * FROM siview.aoa_event_log WHERE claim_time > current timestamp - 4 hours
