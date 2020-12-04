@@ -1,0 +1,24 @@
+§ 建立DB2連線
+連線說明
+https://www.itread01.com/p/517889.html
+https://www.cnblogs.com/staff/p/10021981.html
+https://www.ibm.com/support/knowledgecenter/SSEPGG_11.5.0/com.ibm.swg.im.dbclient.python.doc/doc/t0054368.html
+https://stackoverflow.com/questions/6044326/how-to-connect-python-to-db2
+
+ibm_db 套件安裝步驟
+https://www.cnblogs.com/zeke-python-road/p/10456491.html
+
+Step1. 
+執行 pip install ibm-db 會看到 Downloading... 以下網址物件，會耗時許久，故請先下載下來
+https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/nt32_odbc_cli.zip
+
+Step2.
+解壓縮nt32_odbc_cli.zip 到欲安裝的 ibm_db-3.0.2.tar.gz 解壓縮後的目錄下
+
+Step3.
+cd 到ibm_db-3.0.2.tar.gz 解壓縮後的目錄下
+執行 python setup.py install
+
+Step4.
+最後再把 nt32_odbc_cli.zip 解壓縮後的 clidriver 檔放安裝環境的site-packages 目錄下
+例如 : C:\Users\user\.conda\envs\py37-32\Lib\site-packages
